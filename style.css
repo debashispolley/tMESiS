@@ -138,6 +138,15 @@ nav a:hover { color: var(--primary-bright); background: rgba(0, 160, 227, 0.05);
         flex-direction: column; padding: 0;
         box-shadow: 0 10px 15px rgba(0,0,0,0.1);
         z-index: 999;
+		transition: opacity 0.3s ease, visibility 0.3s ease;
+        visibility: hidden;
+        opacity: 0;
+    }
+	
+	#nav-toggle:checked ~ nav {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
     }
     
     nav ul { flex-direction: column; gap: 0; width: 100%; }
