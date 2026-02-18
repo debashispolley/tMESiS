@@ -111,5 +111,15 @@
             <div class="copyright">&copy; 2026 tMESiS. All rights reserved.</div>
         </div>
     </footer>
+		<script>
+			// This resets the checkbox whenever the page is loaded or navigated back to
+			window.addEventListener('pageshow', function(event) {
+			const navToggle = document.getElementById('nav-toggle');
+			if (navToggle) {
+					navToggle.checked = false;
+				}
+			}
+		);
+		</script>
 </body>
 </html>
